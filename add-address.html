@@ -1,0 +1,285 @@
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="tags for website">
+    <meta name="description" content="front-end starter">
+    <meta name="author" content="Labrin.net">
+
+    <title> Home - Project Title </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.css">
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="container-fluid">
+            <div class="row headerMain">
+                <div class="col-md-2 col-8 logo">
+                    <a href="">
+                        <img class="img-fluid" src="../assets/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-7">
+                    <ul class="pagesLink">
+                        <li><a href="">how it works</a></li>
+                        <li><a href="">buy for me</a></li>
+                        <li><a href="">shipping calculator</a></li>
+                        <li><a href="">news</a></li>
+                        <li><a href="">contacts</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 langLogin">
+                    <select id="selectLanguages">
+                        <option value="AZE">AZE</option>
+                        <option value="EN">EN</option>
+                        <option value="RU">RU</option>
+                    </select>
+    
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            SHAIG MURADOV
+                        </button>
+                        <i class="far fa-bell"></i>
+                        <span class="notif-count">2</span>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">My foreign addresses</button>
+                            <button class="dropdown-item" type="button">ORDERS</button>
+                            <button class="dropdown-item" type="button">My declarations</button>
+                            <button class="dropdown-item" type="button">Balance</button>
+                            <button class="dropdown-item" type="button">Settings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menuBar">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="mobileMenu">
+                <div class="langLogin">
+                    <select id="selectLanguages">
+                        <option value="AZE">AZE</option>
+                        <option value="EN">EN</option>
+                        <option value="RU">RU</option>
+                    </select>
+                    <p>SHAIG MURADOV</p>
+                </div>
+                <ul class="pagesLink">
+                    <li><a href="">how it works</a></li>
+                    <li><a href="">buy for me</a></li>
+                    <li><a href="">shipping calculator</a></li>
+                    <li><a href="">news</a></li>
+                    <li><a href="">contacts</a></li>
+                </ul>
+            </div>
+            <div class="layoutMobile"></div>
+        </div>
+    </header>
+
+<section id="userInfoSection">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 userInfo">
+                <div class="profilePhotoUser" style="background-image: url('../assets/userPhoto.png');"></div>
+                <div class="moreInfoUser">
+                    <h3>
+                        SHAIG <br> MURADOV
+                    </h3>
+                    <p class="customerId">
+                        Customer code: <span>#7465328</span>
+                    </p>
+                    <p class="dateLastDay">
+                        Last 30 days- 0.00$
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 balanceUser">
+                <h5>
+                    Balance (USD)
+                </h5>
+                <ul>
+                    <li>
+                        <p>$ USD: 0.00</p>
+                    </li>
+                    <li>
+                        <p>‎₺ TRY: 0.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 btnsUser">
+                <ul>
+                    <li>
+                        <button><i class="fa fa-box"></i> Order <i class="fa fa-plus"></i></button>
+                    </li>
+                    <li>
+                        <button><i class="fa fa-file"></i> Add a declaration</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="orders">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="leftMenuLinks">
+                    <li><a href="">My foreign addresses</a></li>
+                    <li class="activeLink"><a href="">MY ADDRESSES</a></li>
+                    <li><a href="">ORDERS</a></li>
+                    <li><a href="">My DECLARATIONS</a></li>
+                    <li><a href="">BALANCE</a></li>
+                    <li><a href="">SETTINGS</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-12 col-12">
+                        <button class="btn-address">Add address +</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 selectFields">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="form-group">
+                                    <label for="country"></label>
+                                    <select name="countries" id="country" class="selectpicker form-control">
+                                        <option value="" selected>Select country</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="form-group">
+                                    <label for="country"></label>
+                                    <select name="countries" id="country" class="selectpicker form-control">
+                                        <option value="" selected>Select courier</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                <div class="form-group">
+                                    <label for="country"></label>
+                                    <select name="countries" id="country" class="selectpicker form-control">
+                                        <option value="" selected>Select district</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 mt-sm-4">
+                                <div class="form-group">
+                                    <label for="country"></label>
+                                    <select name="countries" id="country" class="selectpicker form-control">
+                                        <option value="" selected>Select city</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 mt-sm-4">
+                                <div class="form-group">
+                                    <label for="country"></label>
+                                    <select name="countries" id="country" class="selectpicker form-control">
+                                        <option value="" selected>Select warehouse</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 mt-sm-4">
+                                <div class="form-group">
+                                    <label for="country"></label>
+                                    <select name="countries" id="country" class="selectpicker form-control">
+                                        <option value="" selected>Select street</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                        <option value="">Lorem ipsum</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 whiteLogo">
+                <a href="">
+                    <img class="img-fluid" src="../assets/whiteLogo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <ul class="siteMap">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">Tarrifs</a></li>
+                    <li><a href="">LOGISTIC TERMS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <ul class="siteMap">
+                    <li><a href="">SHOPS</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <ul class="appLinks">
+                    <li>
+                        <a href="">
+                            <img class="img-fluid" src="../assets/google.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-fluid" src="../assets/ios.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap-select.min.js"></script>
+
+
+</body>
+</html>

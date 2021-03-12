@@ -1,0 +1,369 @@
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="tags for website">
+    <meta name="description" content="front-end starter">
+    <meta name="author" content="Labrin.net">
+
+    <title> Home - Project Title </title>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-select.css">
+</head>
+
+<body>
+
+
+<header id="header">
+    <div class="container-fluid">
+        <div class="row headerMain">
+            <div class="col-md-2 col-8 logo">
+                <a href="">
+                    <img class="img-fluid" src="../assets/logo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-7">
+                <ul class="pagesLink">
+                    <li><a href="">how it works</a></li>
+                    <li><a href="">buy for me</a></li>
+                    <li><a href="">shipping calculator</a></li>
+                    <li><a href="">news</a></li>
+                    <li><a href="">contacts</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 langLogin">
+                <select id="selectLanguages">
+                    <option value="AZE">AZE</option>
+                    <option value="EN">EN</option>
+                    <option value="RU">RU</option>
+                </select>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        SHAIG MURADOV
+                    </button>
+                    <i class="far fa-bell"></i>
+                    <span class="notif-count">2</span>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <button class="dropdown-item" type="button">My foreign addresses</button>
+                        <button class="dropdown-item" type="button">ORDERS</button>
+                        <button class="dropdown-item" type="button">My declarations</button>
+                        <button class="dropdown-item" type="button">Balance</button>
+                        <button class="dropdown-item" type="button">Settings</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menuBar">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="mobileMenu">
+            <div class="langLogin">
+                <select id="selectLanguages">
+                    <option value="AZE">AZE</option>
+                    <option value="EN">EN</option>
+                    <option value="RU">RU</option>
+                </select>
+                <p>SHAIG MURADOV</p>
+            </div>
+            <ul class="pagesLink">
+                <li><a href="">how it works</a></li>
+                <li><a href="">buy for me</a></li>
+                <li><a href="">shipping calculator</a></li>
+                <li><a href="">news</a></li>
+                <li><a href="">contacts</a></li>
+            </ul>
+        </div>
+        <div class="layoutMobile"></div>
+    </div>
+</header>
+
+
+<section id="userInfoSection">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 userInfo">
+                <div class="profilePhotoUser" style="background-image: url('../assets/userPhoto.png');"></div>
+                <div class="moreInfoUser">
+                    <h3>
+                        SHAIG <br> MURADOV
+                    </h3>
+                    <p class="customerId">
+                        CUSTOMER code: <span>#7465328</span>
+                    </p>
+                    <p class="dateLastDay">
+                        Last 30 days- 0.00$
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 balanceUser">
+                <h5>
+                    Balance (USD)
+                </h5>
+                <ul>
+                    <li>
+                        <p>$ USD: 0.00</p>
+                    </li>
+                    <li>
+                        <p>‎₺ TRY: 0.00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 btnsUser">
+                <ul>
+                    <li>
+                        <button><i class="fa fa-box"></i> Order <i class="fa fa-plus"></i></button>
+                    </li>
+                    <li>
+                        <button><i class="fa fa-file"></i> Add a declaration</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="orders">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <ul class="leftMenuLinks">
+                    <li><a href="">My foreign addresses</a></li>
+                    <li><a href="">MY ADDRESSES</a></li>
+                    <li class="activeLink"><a href="">ORDERS</a></li>
+                    <li><a href="">My DECLARATIONS</a></li>
+                    <li><a href="">BALANCE</a></li>
+                    <li><a href="">SETTINGS</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="form-group">
+                            <label for="country"></label>
+                            <select name="countries" id="country" class="selectpicker form-control">
+                                <option value="" selected>Order status</option>
+                                <option value="">All</option>
+                                <option value="">Shopping cart</option>
+                                <option value="">Paid</option>
+                                <option value="">Deleted</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 mt-4">
+                        <div class="table-responsive-lg">
+                            <table class="table table-striped orders">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Tracking number</th>
+                                    <th scope="col">Order link</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">Total price</th>
+                                    <th scope="col"></th>
+                                    <th scope="col"></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="order-number"><span>12540365843</span> <img src="./assets/copy.svg"
+                                                                                           alt="copy"></td>
+                                    <td class="order-link">
+                                        <p>https://webrazziaaaaaaaaaaaaaa</p>
+                                    </td>
+                                    <td><span>1</span></td>
+                                    <td><span>139,99 TRY</span></td>
+                                    <td>
+                                        <button class="btn-pay">PAY</button>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown edit-delete">
+                                            <button class="btn" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/ellipsis.svg" alt="ellipsis">
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Details</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order-number"><span>12540365843</span> <img src="./assets/copy.svg"
+                                                                                           alt="copy"></td>
+                                    <td class="order-link">
+                                        <p>https://webrazziaaaaaaaaaaaaaa</p>
+                                    </td>
+                                    <td><span>2</span></td>
+                                    <td><span>139,99 TRY</span></td>
+                                    <td>
+                                        <button class="btn-pay">PAY</button>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown edit-delete">
+                                            <button class="btn" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/ellipsis.svg" alt="ellipsis">
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Details</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order-number"><span>12540365843</span> <img src="./assets/copy.svg"
+                                                                                           alt="copy"></td>
+                                    <td class="order-link">
+                                        <p>https://webrazziaaaaaaaaaaaaaa</p>
+                                    </td>
+                                    <td><span>1</span></td>
+                                    <td><span>139,99 TRY</span></td>
+                                    <td>
+                                        <button class="btn-pay">PAY</button>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown edit-delete">
+                                            <button class="btn" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/ellipsis.svg" alt="ellipsis">
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Details</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order-number"><span>12540365843</span> <img src="./assets/copy.svg"
+                                                                                           alt="copy"></td>
+                                    <td class="order-link">
+                                        <p>https://webrazziaaaaaaaaaaaaaa</p>
+                                    </td>
+                                    <td><span>3</span></td>
+                                    <td><span>139,99 TRY</span></td>
+                                    <td>
+                                        <button class="btn-pay">PAY</button>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown edit-delete">
+                                            <button class="btn" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/ellipsis.svg" alt="ellipsis">
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Details</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="order-number"><span>12540365843</span> <img src="./assets/copy.svg"
+                                                                                           alt="copy"></td>
+                                    <td class="order-link">
+                                        <p>https://webrazziaaaaaaaaaaaaaa</p>
+                                    </td>
+                                    <td><span>1</span></td>
+                                    <td><span>139,99 TRY</span></td>
+                                    <td>
+                                        <button class="btn-pay">PAY</button>
+                                    </td>
+                                    <td>
+                                        <div class="dropdown edit-delete">
+                                            <button class="btn" type="button" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <img src="./assets/ellipsis.svg" alt="ellipsis">
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Details</a>
+                                                <a class="dropdown-item" href="#">Edit</a>
+                                                <a class="dropdown-item" href="#">Delete</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="pagenation d-flex align-items-center justify-content-start">
+                        <li><a href="">1</a></li>
+                        <li><a href="">2</a></li>
+                        <li><a href="">next</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 whiteLogo">
+                <a href="">
+                    <img class="img-fluid" src="../assets/whiteLogo.png" alt="">
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <ul class="siteMap">
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">Tarrifs</a></li>
+                    <li><a href="">LOGISTIC TERMS</a></li>
+                    <li><a href="">SERVICES</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-6">
+                <ul class="siteMap">
+                    <li><a href="">SHOPS</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">NEWS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <ul class="appLinks">
+                    <li>
+                        <a href="">
+                            <img class="img-fluid" src="../assets/google.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img class="img-fluid" src="../assets/ios.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap-select.min.js"></script>
+</body>
+
+</html>
