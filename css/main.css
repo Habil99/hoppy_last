@@ -21773,6 +21773,16 @@ header .btn-group .btn-secondary {
     margin-bottom: 40px;
 }
 
+#orders .btn-add-link {
+    box-shadow: none;
+    outline: none;
+    border: none;
+    appearance: none;
+    background: #EB7018;
+    color: white;
+    padding: 14px 22px;
+}
+
 #orders .btn.dropdown-toggle {
     box-shadow: none;
     border: 1px solid black;
@@ -21803,7 +21813,7 @@ header .btn-group .btn-secondary {
     padding: 6px 0;
 }
 
-#orders .dropdown-menu.inner li{
+#orders .dropdown-menu.inner li {
     padding: 6px;
     font-style: normal;
     font-weight: normal;
@@ -21822,7 +21832,7 @@ header .btn-group .btn-secondary {
     line-height: 22px;
 }
 
-.orders.table thead tr th{
+.orders.table thead tr th {
     padding: 25px 30px;
 }
 
@@ -21932,9 +21942,18 @@ header .btn-group .btn-secondary {
     }
 }
 
+@media (max-width: 768px) {
+
+    #orders .btn-add-link {
+        margin-top: 20px;
+    }
+}
+
+
 @media (max-width: 576px) {
     #orders .selectFields .form-group {
         margin-top: 20px;
     }
 }
+
 /* ***************************** Last added ***************************** */
